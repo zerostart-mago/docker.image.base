@@ -103,7 +103,7 @@ RUN \
     echo -e "${FONT_SUCCESS}[SUCCESS] Installed python-${X_PY2_VERSION}${FONT_DEFAULT}" && \
     echo -e "${FONT_INFO}[INFO] Installing Mustache Mo${FONT_DEFAULT}" && \
     curl --fail --silent --location "https://raw.githubusercontent.com/tests-always-included/mo/master/mo" -o /opt/local/bin/mo && \
-    chmod 755 /opt/local/bin/mo & \
+    chmod 755 /opt/local/bin/mo && \
     echo -e "${FONT_SUCCESS}[SUCCESS] Installed Mustach Mo${FONT_DEFAULT}" && \
     rm -f /tmp/install_python.sh && \
     /opt/local/bin/x-archlinux-remove-unnecessary-files.sh
