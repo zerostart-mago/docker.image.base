@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+    <property><name>dfs.replication</name><value>__DFS_REPLICATION__</value></property>
+    <property>
+        <name>dfs.hosts</name>
+        <value>/opt/local/hadoop/etc/hadoop/dfs.hosts.include</value>
+    </property>
+    <property>
+        <name>dfs.hosts.exclude</name>
+        <value>/opt/local/hadoop/etc/hadoop/dfs.hosts.exclude</value>
+    </property>
+    <property><name>dfs.namenode.rpc-address</name><value>__DFS_NAMENODE_RPC_ADDRESS__</value></property>
+    <property><name>dfs.namenode.http-address</name><value>__DFS_NAMENODE_HTTP_ADDRESS__</value></property>
+    <property><name>dfs.namenode.name.dir</name><value>__DFS_NAMENODE_NAME_DIR__</value></property>
+    <property><name>dfs.namenode.checkpoint.dir</name><value>__DFS_NAMENODE_CHECKPOINT_DIR__</value></property>
+    <property><name>dfs.namenode.datanode.registration.ip-hostname-check</name><value>__DFS_NAMENODE_DATANODE_REGISTRATION_IP_HOSTNAME_CHECK__</value></property>
+    <property><name>dfs.namenode.secondary.http-address</name><value>__DFS_NAMENODE_SECONDARY_HTTP_ADDRESS__</value></property>
+    <property><name>dfs.datanode.address</name><value>__DFS_DATANODE_ADDRESS__</value></property>
+    <property><name>dfs.datanode.http.address</name><value>__DFS_DATANODE_HTTP_ADDRESS__</value></property>
+    <property><name>dfs.datanode.ipc.address</name><value>__DFS_DATANODE_IPC_ADDRESS__</value></property>
+    <property><name>dfs.datanode.use.datanode.hostname</name><value>__DFS_DATANODE_USE_DATANODE_HOSTNAME__</value></property>
+    <property><name>dfs.datanode.data.dir</name><value>__DFS_DATANODE_DATA_DIR__</value></property>
+    <property><name>dfs.client.use.datanode.hostname</name><value>__DFS_CLIENT_USE_DATANODE_HOSTNAME__</value></property>
+</configuration>
+
